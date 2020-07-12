@@ -1,0 +1,37 @@
+#editors-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.editor {
+    width: calc(30% - 20px);
+    height: 20vh;
+    border: 0px;
+    border-bottom: 3px solid darkslateblue;
+    background-color: black;
+    padding: 10px;
+}
+
+#html {
+    color: lightblue;
+}
+#css {
+    color: pink;
+    border-left: 9px solid darkslateblue;
+    border-right: 9px solid darkslateblue;
+}
+#js {
+    color: lightgreen;
+}
+
+#result {
+    width: 90vw;
+    height: 70vh;
+    border: 3px solid black;
+}
+
+body {
+    text-align: center;
+    background-color: darkslateblue;
+}

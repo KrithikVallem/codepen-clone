@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>A Codepen.io Clone</title>
+        <meta name="description" content="A simple clone of codepen.io">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="editors-container">
+
+            <textarea id="html" class="editor" placeholder="HTML"><!-- HTML -->
+
+
+<h1>Codepen.io Clone!</h1>
+<h3></h3>
+            </textarea>
+
+            <textarea id="css" class="editor" placeholder="CSS">/* CSS */
+
+
+h1 {
+    color: orange;
+    text-decoration: underline;
+}</textarea>
+
+            <textarea id="js" class="editor" placeholder="JavaScript">// JavaScript
+
+
+let index = 0;
+setTimeout(typeText, 500);
+
+function typeText() {
+    const str = "Enter code in the editors above, and see a live preview below!";
+
+    if (index === str.length) return;
+
+    const text = document.querySelector("h3");
+    text.textContent += str.charAt(index++);
+
+    setTimeout(typeText, 50);
+}
+            </textarea>
+        </div>
+        <iframe id="result"></iframe>
+        
+        <script src="index.js" async defer></script>
+    </body>
+</html>
