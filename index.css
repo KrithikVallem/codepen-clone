@@ -8,7 +8,7 @@
     width: calc(30% - 20px);
     height: 20vh;
     border: 0px;
-    border-bottom: 3px solid darkslateblue;
+    border-bottom: 3px solid coral;
     background-color: black;
     padding: 10px;
 }
@@ -18,8 +18,8 @@
 }
 #css {
     color: pink;
-    border-left: 9px solid darkslateblue;
-    border-right: 9px solid darkslateblue;
+    border-left: 9px solid coral;
+    border-right: 9px solid coral;
 }
 #js {
     color: lightgreen;
@@ -33,5 +33,5 @@
 
 body {
     text-align: center;
-    background-color: darkslateblue;
+    background-color: coral;
 }
